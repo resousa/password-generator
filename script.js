@@ -20,3 +20,7 @@ var characterCon = confirm('Would you like to use special characters?');
 var pwLength = parseInt(desiredLength)
 console.log(pwLength)
 
+var lowercase = 'abcdefghijklmnopqrstuvwxyz'.split('');
+var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+var number = '0123456789'.split('');
+var character = ' !"#$%&()*+,-./:;<=>?@[]^_`{|}~'.split('');
