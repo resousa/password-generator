@@ -49,3 +49,8 @@ for (var i = 0; i <= pwLength; i++) {
   newPassword = newPassword + userPassword[Math.floor(Math.random() * userPassword.length)]
 }
 console.log(newPassword)
+
+generateEl.addEventListener('click', clickGen);
+function clickGen() {
+  resultEl.textContent = newPassword;
+}
