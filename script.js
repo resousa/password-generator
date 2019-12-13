@@ -52,5 +52,10 @@ console.log(newPassword)
 
 generateEl.addEventListener('click', clickGen);
 function clickGen() {
-  resultEl.textContent = newPassword;
+  resultEl.value = newPassword;
+}
+
+function clipboard() {
+  resultEl.text
+  document.execCommand("copy");
 }
