@@ -56,6 +56,6 @@ function clickGen() {
 }
 
 function clipboard() {
-  resultEl.text
+  document.getElementById("result").select();
   document.execCommand("copy");
 }
