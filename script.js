@@ -11,7 +11,7 @@ if (desiredLength >= 8 && desiredLength <= 128) {
   var characterCon = confirm('Would you like to use special characters?');
 }
 else {
-  alert("You must choose a password lenght between 8 and 128 characters");
+  alert("You must choose a password lenght between 8 and 128 characters.");
 }
 
 var pwLength = parseInt(desiredLength)
@@ -44,18 +44,24 @@ if (characterCon === true) {
   userPassword = userPassword + character
   console.log(userPassword)
 }
- 
-for (var i = 0; i <= pwLength; i++) {
-  newPassword = newPassword + userPassword[Math.floor(Math.random() * userPassword.length)]
+
+if (lowercaseCon === false && uppercaseCon === false && numberCon === false && characterCon === false) {
+  alert("You must choose at least one option.")
+}
+
+else {
+  for (var i = 0; i <= pwLength; i++) {
+    newPassword = newPassword + userPassword[Math.floor(Math.random() * userPassword.length)]
+  }
 }
 console.log(newPassword)
 
 generateEl.addEventListener('click', clickGen);
 function clickGen() {
-  resultEl.value = newPassword;
+  resultEl.textContent = newPassword;
 }
 
 function clipboard() {
-  document.getElementById("result").select();
+  document.getElementById("result");
   document.execCommand("copy");
 }
