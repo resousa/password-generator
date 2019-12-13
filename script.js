@@ -46,7 +46,7 @@ if (characterCon === true) {
 }
 
 if (lowercaseCon === false && uppercaseCon === false && numberCon === false && characterCon === false) {
-  alert("You must choose at least one optiion.")
+  alert("You must choose at least one text type option.")
 }
 
 else {
