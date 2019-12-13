@@ -46,7 +46,7 @@ if (characterCon === true) {
 }
 
 if (lowercaseCon === false && uppercaseCon === false && numberCon === false && characterCon === false) {
-  alert("You must choose at least one option.")
+  alert("You must choose at least one optiion.")
 }
 
 else {
@@ -58,10 +58,10 @@ console.log(newPassword)
 
 generateEl.addEventListener('click', clickGen);
 function clickGen() {
-  resultEl.textContent = newPassword;
+  resultEl.value = newPassword;
 }
 
 function clipboard() {
-  document.getElementById("result");
+  document.getElementById("result").select();
   document.execCommand("copy");
 }
