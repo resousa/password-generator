@@ -8,7 +8,7 @@
 - [License](#License)
 
 ### Info
-![password generator demo](./assets/gencap.png)
+![password generator demo](gencap.png)
 
 
 This prompt based random password generator gives the user the ability to create random passwords between 8 and 128 characters long. The user can also choose to use lowercase letters, uppercase leters, numbers, and symbols. Once the user has input their desired information. A password is output with the ability to copy it to clipboard.  
